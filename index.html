@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+
+  
+  <body>
+    <header>
+      <h1>Weather App  </h1>
+    </header>
+    <div class="sidebar body">
+      <input id="searchbar" placeholder = "Input City"></input>
+      <button class="entrbtn" id="entrbtn">ENTER</button>
+      <button class="sidebtn" id="btn1"></button>
+      <button class="sidebtn" id="btn2"></button>
+      <button class="sidebtn" id="btn3"></button>
+      <button class="sidebtn" id="btn4"></button>
+      <button class="sidebtn" id="btn5"></button>
+      <button class="sidebtn" id="btn6"></button>
+      <button class="sidebtn" id="btn7"></button>
+    </div>
+    <div class="main body">
+    <div class="container">
+      <h2 id="cityname">Select a Location</h2>
+      <div class="data" id="day0">
+        <div>Temp:</div>
+        <div>Wind:</div>
+        <div>Humidity:</div>
+        <div>UV Index:</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" id="day1">
+        <script>
+          date= new Date();
+          year = date.getFullYear();
+          month = date.getMonth() + 1;
+          day = date.getDate()+1;
+          document.getElementById("day1").innerHTML = String(month)+ "/"+ String(day)+ "/"+ String(year);
+        </script>
+        <div>Temp:</div>
+        <div>Wind:</div>
+        <div>Humidity:</div>
+        <div>UV Index:</div>
+      </div>
+      <div class="card" id="day2">
+        <script>
+          date= new Date();
+          year = date.getFullYear();
+          month = date.getMonth() + 1;
+          day = date.getDate()+2;
+          document.getElementById("day2").innerHTML = String(month)+ "/"+ String(day)+ "/"+ String(year);
+        </script>
+        <div>Temp:</div>
+        <div>Wind:</div>
+        <div>Humidity:</div>
+        <div>UV Index:</div>
+
+      </div>
+      <div class="card" id="day3">
+        <script>
+          date= new Date();
+          year = date.getFullYear();
+          month = date.getMonth() + 1;
+          day = date.getDate()+3;
+          document.getElementById("day3").innerHTML = String(month)+ "/"+ String(day)+ "/"+ String(year);
+        </script>
+        <div>Temp:</div>
+        <div>Wind:</div>
+        <div>Humidity:</div>
+        <div>UV Index:</div>
+      </div>
+      <div class="card" id="day4">
+        <script>
+          date= new Date();
+          year = date.getFullYear();
+          month = date.getMonth() + 1;
+          day = date.getDate()+4;
+          document.getElementById("day4").innerHTML = String(month)+ "/"+ String(day)+ "/"+ String(year);
+        </script>
+        <div>Temp:</div>
+        <div>Wind:</div>
+        <div>Humidity:</div>
+        <div>UV Index:</div> 
+      </div>
+      <div class="card" id="day5">
+        <script>
+          date= new Date();
+          year = date.getFullYear();
+          month = date.getMonth() + 1;
+          day = date.getDate()+5;
+          document.getElementById("day5").innerHTML = String(month)+ "/"+ String(day)+ "/"+ String(year);
+        </script>
+        <div>Temp:</div>
+        <div>Wind:</div>
+        <div>Humidity:</div>
+        <div>UV Index:</div>
+      </div>
+    </div>
+   
+  </div>
+  
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
