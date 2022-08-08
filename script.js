@@ -12,6 +12,7 @@ day2 = document.getElementById("day2");
 day3 = document.getElementById("day3");
 day4 = document.getElementById("day4");
 day5 = document.getElementById("day5");
+entrbtn = document.getElementById("entrbtn");
 cityName=document.getElementById("cityname");
 btnArr = [btn1,btn2,btn3,btn4,btn5,btn6,btn7];
 dayArr = [day0,day1,day2,day3,day4,day5];
@@ -136,6 +137,11 @@ btn7.addEventListener("click", function () {
   getLatLon(city);
   
 });
+entrbtn.addEventListener("click",function(){
+  city=searchbar.value.toUpperCase();
+  cityName.innerHTML = city;
+  getLatLon(city);
+})
 
 function roundTemp(num){
   return Math.round(num * 10)/10
